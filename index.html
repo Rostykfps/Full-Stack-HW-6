@@ -430,8 +430,27 @@
             </li>
           </ul>
         </div>
+        <!-- SUBSCRIBE FORM -->
+        <form class="subscribe-form">
+          <label>
+            <p class="subscribe-form-title">Subscribe</p>
+            <input
+              type="email"
+              name="subscribe_email"
+              placeholder="E-mail"
+              class="subscribe-form-input"
+            />
+          </label>
+          <button type="submit" class="button subscribe-button">
+            <span class="subscribe-text-button">Subscribe</span>
+            <svg class="subscribe-footer-icon" width="24" height="20">
+              <use href="./images/sprite.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
@@ -443,6 +462,73 @@
             <use href="./images/sprite.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <!-- MODAL FORM -->
+        <form class="modal-form">
+          <p class="modal-form-title">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Name</span>
+            <div class="modal-form-input-field">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+              />
+              <svg class="modal-form-icon icon-person" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Phone</span>
+            <div class="modal-form-input-field">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form-input"
+                required
+              />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Email</span>
+            <div class="modal-form-input-field">
+              <input type="email" name="user_email" class="modal-form-input" />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Comment</span>
+            <textarea
+              name="user_message"
+              placeholder="Text input"
+              class="modal-form-message"
+            ></textarea>
+          </label>
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user-message"
+            class="modal-form-check visually-hidden"
+          />
+          <label for="user-policy" class="modal-form-check-des">
+            <svg class="modal-checkbox-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-checkbox-tick"></use>
+            </svg>
+            I accept the terms and conditions of the &nbsp
+            <a href="#" class="link-policy">Privacy Policy</a>
+          </label>
+          <button type="submit" class="button modal-form-button-submit">
+            Send
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
